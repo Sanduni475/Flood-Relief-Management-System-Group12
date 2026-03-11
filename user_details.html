@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details & Relief Requests</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-primary p-2">
+  <span class="navbar-brand">Admin – User & Relief Details</span>
+  <a href="users.html" class="btn btn-light btn-sm">Back to Users</a>
+</nav>
+
+<div class="container mt-4">
+
+  <!-- ===============================
+       SECTION 1: USER DETAILS
+  =============================== -->
+  <h4 class="page-title">Affected Person Details</h4>
+
+  <div class="content-card mb-4">
+
+    <div class="row mb-2">
+      <div class="col-md-4 fw-bold">Full Name</div>
+      <div class="col-md-8">Nimal Perera</div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-4 fw-bold">Email</div>
+      <div class="col-md-8">nimal@gmail.com</div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-4 fw-bold">Contact Number</div>
+      <div class="col-md-8">077 123 4567</div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-4 fw-bold">Address</div>
+      <div class="col-md-8">
+        No. 10, Main Road,<br>
+        Galle
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-4 fw-bold">District</div>
+      <div class="col-md-8">Galle</div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 fw-bold">User Role</div>
+      <div class="col-md-8">Affected Person</div>
+    </div>
+
+  </div>
+
+  <!-- ===============================
+       SECTION 2: RELIEF REQUESTS
+  =============================== -->
+  <h4 class="page-title">Relief Requests by This User</h4>
+
+  <div class="content-card">
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Relief Type</th>
+          <th>DS Division</th>
+          <th>GN Division</th>
+          <th>Family Members</th>
+          <th>Severity</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Food</td>
+          <td>Galle Four Gravets</td>
+          <td>GN-123</td>
+          <td>4</td>
+          <td>
+            <span class="badge bg-danger">High</span>
+          </td>
+          <td>House fully flooded, urgent food required</td>
+        </tr>
+
+        <!-- Example of second request (optional) -->
+        <tr>
+          <td>Medicine</td>
+          <td>Galle Four Gravets</td>
+          <td>GN-123</td>
+          <td>4</td>
+          <td>
+            <span class="badge bg-warning text-dark">Medium</span>
+          </td>
+          <td>Elderly person needs daily medication</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
