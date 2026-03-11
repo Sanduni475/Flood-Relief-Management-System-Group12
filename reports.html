@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-primary p-2">
+  <span class="navbar-brand">Admin – Reports</span>
+  <a href="admin_dashboard.html" class="btn btn-light btn-sm">Back to Dashboard</a>
+</nav>
+
+<div class="container mt-4">
+  <h4 class="page-title mb-3">Relief Reports</h4>
+
+  <div class="content-card">
+
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <label>Filter by Area</label>
+        <select class="form-control">
+            <option value="">All Districts</option>
+            <option>Ampara</option>
+            <option>Anuradhapura</option>
+            <option>Badulla</option>
+            <option>Batticaloa</option>
+            <option>Colombo</option>
+            <option>Galle</option>
+            <option>Gampaha</option>
+            <option>Hambantota</option>
+            <option>Jaffna</option>
+            <option>Kalutara</option>
+            <option>Kandy</option>
+            <option>Kegalle</option>
+            <option>Kilinochchi</option>
+            <option>Kurunegala</option>
+            <option>Mannar</option>
+            <option>Matale</option>
+            <option>Matara</option>
+            <option>Monaragala</option>
+            <option>Mullaitivu</option>
+            <option>Nuwara Eliya</option>
+            <option>Polonnaruwa</option>
+            <option>Puttalam</option>
+            <option>Ratnapura</option>
+            <option>Trincomalee</option>
+            <option>Vavuniya</option>
+        </select>
+
+      </div>
+
+      <div class="col-md-4">
+        <label>Filter by Relief Type</label>
+        <select class="form-control">
+          <option value="">All</option>
+          <option>Food</option>
+          <option>Water</option>
+          <option>Medicine</option>
+          <option>Shelter</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Relief Type</th>
+          <th>Total Requests</th>
+          <th>High Severity</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Food</td>
+          <td>15</td>
+          <td>7</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
