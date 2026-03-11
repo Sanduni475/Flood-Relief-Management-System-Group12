@@ -4,18 +4,18 @@
 }
 
 
-/* ===============================
+/* 
    GLOBAL STYLES
-================================ */
+ */
 body {
   background-color: #f4f6f9;
   font-family: "Segoe UI", Arial, sans-serif;
   color: #333;
 }
 
-/* ===============================
+/* 
    NAVBAR
-================================ */
+ */
 .navbar {
   background-color: var(--primary-color) !important;
 }
@@ -25,9 +25,9 @@ body {
   font-weight: 600;
 }
 
-/* ===============================
+/* 
    PAGE TITLES
-================================ */
+ */
 .page-title {
   font-size: 22px;
   font-weight: 600;
