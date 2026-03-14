@@ -1,64 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registered Users</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Flood Relief System - User Details</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
 </head>
+
 <body>
+    <nav class="navbar navbar-dark bg-primary p-2">
+        <span class="navbar-brand">Admin – User & Relief Details</span>
+        <a href="users.html" class="btn btn-light btn-sm">Back to Users</a>
+    </nav>
+    <div class="container mt-4">
+        <h4 class="page-title">Affected Person Details</h4>
+        <div id="user-info-card" class="content-card mb-4">
+        </div>
+        <h4 class="page-title">Relief Requests by This User</h4>
+        <div class="content-card">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Relief Type</th>
+                        <th>DS Division</th>
+                        <th>GN Division</th>
+                        <th>Family Members</th>
+                        <th>Severity</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="user-details-requests-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-<nav class="navbar navbar-dark bg-primary p-2">
-  <span class="navbar-brand">Admin – Users</span>
-  <a href="admin_dashboard.html" class="btn btn-light btn-sm">Back to Dashboard</a>
-</nav>
-
-<div class="container mt-4">
-  <h4 class="page-title">Registered Users</h4>
-
-  <div class="content-card">
-    <table class="table table-bordered table-striped">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Role</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <!-- Affected Person -->
-        <tr>
-          <td>Nimal Perera</td>
-          <td>nimal@gmail.com</td>
-          <td>
-            <span class="badge bg-primary">Affected Person</span>
-          </td>
-          <td class="action-btns">
-            <a href="user_details.html" class="btn btn-info btn-sm">View</a>
-            <button class="btn btn-danger btn-sm">Delete</button>
-          </td>
-        </tr>
-
-        <!-- Admin User -->
-        <tr>
-          <td>System Admin</td>
-          <td>admin@gmail.com</td>
-          <td>
-            <span class="badge bg-secondary">Admin</span>
-          </td>
-          <td class="action-btns">
-            <a href="user_details.html" class="btn btn-info btn-sm">View</a>
-            <span class="text-muted ms-2">Delete disabled</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <script src="js/admin.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", loadUserDetails);
+    </script>
 </body>
+
 </html>
