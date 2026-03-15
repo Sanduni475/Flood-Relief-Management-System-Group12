@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 include 'db_connect.php';
 session_start();
 
-if (!isset($_SESSION['admin_id'])) {
+if (!isset($_SESSION['user_id'])) {
     echo json_encode(["status" => "error", "message" => "Unauthorized"]);
     exit;
 }
