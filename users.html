@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Relief System - Users</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary p-2">
+        <span class="navbar-brand">Admin – Users</span>
+        <a href="admin_dashboard.html" class="btn btn-light btn-sm">Back to Dashboard</a>
+    </nav>
+    <div class="container mt-4">
+        <h4 class="page-title">Registered Users</h4>
+        <div class="content-card">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-users-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/admin.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", loadUsers);
+    </script>
+</body>
+
+</html>

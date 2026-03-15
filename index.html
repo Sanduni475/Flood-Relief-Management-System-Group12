@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flood Relief System - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+  <!-- Main centered box for login -->
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow auth-card-login">
+      <h4 class="text-center mb-3">Affected Person Login</h4>
+      <!-- Form starts here -->
+      <form id="login-form" onsubmit="handleLogin(event)">
+        <!-- Input fields -->
+        <input type="email" name="email" class="form-control mb-3" placeholder="Email" required>
+        <input type="password" name="password" class="form-control mb-3" placeholder="Password" required>
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
+      <p class="text-center mt-3">
+        <a href="register.html">Register as Affected Person</a>
+      </p>
+      <hr>
+      <p class="text-center">
+        <a href="admin_login.html" class="text-muted">Admin Login</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+
+</html>

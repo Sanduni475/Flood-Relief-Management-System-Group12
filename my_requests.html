@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Relief System - My Requests</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary p-2">
+        <span class="navbar-brand">My Relief Requests</span>
+        <a href="user_dashboard.html" class="btn btn-light btn-sm">Back</a>
+    </nav>
+    <div class="container mt-4">
+        <h4 class="page-title mb-3">My Relief Requests</h4>
+        <div class="content-card">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Relief Type</th>
+                        <th>District</th>
+                        <th>Severity</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="my-requests-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/user.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", loadMyRequests);
+    </script>
+</body>
+
+</html>
