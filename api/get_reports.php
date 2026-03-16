@@ -10,7 +10,7 @@ if (!isset($_SESSION['admin_id'])) {
 
 //Get filter parameter
 $area = isset($_GET['area']) ? trim($_GET['area']) : '';
-$reliefType = isset($_GET['relief_type']) ? trim($_GET['area']) : '';
+$reliefType = isset($_GET['relief_type']) ? trim($_GET['relief_type']) : '';
 
 // Build query with optional filters
 $whereConditions = [];
