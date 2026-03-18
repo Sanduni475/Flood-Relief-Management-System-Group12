@@ -22,7 +22,6 @@ async function loadAdminDashboard() {
             <td>#REQ-${req.Relief_ID}</td>
             <td>${req.District}</td>
             <td><span class="badge ${getSeverityBadge(req.Flood_severity_level)}">${req.Flood_severity_level}</span></td>
-            <td>Pending</td>
             <td class="text-muted">${new Date(req.Created_date_time).toLocaleDateString()}</td>
           `;
                     tbody.appendChild(tr);
